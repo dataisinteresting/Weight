@@ -29,9 +29,9 @@ weight_plot.set_xlabel('Days', fontsize = 14)
 weight_plot.set_ylabel('Weight (lbs)', fontsize = 14)
 
 # Places text annotations of R_squared, slope, and intercept on the regplot
-plt.text(3,167, f'R^2 = {R_squared}', size='medium', color='black', weight='semibold', **{'fontname':'Arial'})
-plt.text(3,166.5, f'Slope = {slope}', size='medium', color='black', weight='semibold', **{'fontname':'Arial'})
-plt.text(3,166, f'Intercept = {intercept}', size='medium', color='black', weight='semibold', **{'fontname':'Arial'})
+plt.text(3,0, f'R^2 = {R_squared}', size='medium', color='black', weight='semibold', **{'fontname':'Arial'})
+plt.text(3,0, f'Slope = {slope}', size='medium', color='black', weight='semibold', **{'fontname':'Arial'})
+plt.text(3,0, f'Intercept = {intercept}', size='medium', color='black', weight='semibold', **{'fontname':'Arial'})
 
 # Saves the plot to the current working directory
 plt.savefig('weight.png', dpi = 300)
