@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Creates an array of elapsed days and assigns it to days_elapsed
-days_elapsed = np.array([1, 2, 3 ,4, 5, 6, 7, 8]).reshape(-1,1)
-weight = np.array([163.2, 162.6, 163.4, 161.6, 161.8, 161.2, 160.0, 160.4])
+days_elapsed = np.array([1, 2, 3 ,4, 5, 6, 7, 8, 9]).reshape(-1,1)
+weight = np.array([163.2, 162.6, 163.4, 161.6, 161.8, 161.2, 160.0, 160.4, 160.0])
 
 # Instantiates a LinearRegression model and fits it to the above arrays
 model = sklearn.linear_model.LinearRegression().fit(days_elapsed,weight)
