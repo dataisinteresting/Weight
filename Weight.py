@@ -6,10 +6,10 @@ import seaborn as sns
 
 # Creates an array of elapsed days and assigns it to days_elapsed
 days_elapsed = np.array([1, 2, 3 ,4, 5, 6, 7, 8, 9, 10,11,12,13, 14,15,16,17,18,
-                         19, 20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37]).reshape(-1,1)
+                         19, 20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38]).reshape(-1,1)
 weight = np.array([163.2, 162.6, 163.4, 161.6, 161.8, 161.2, 160.0, 160.4, 160.0, 159.6,160.0,159.2,157.8, 157.4,156.8,157.4,
                    157.2, 157.8,155.8, 156.6,156.8,155.8,157.8,156.4,155.8,155.4,154.4,153.0,153.8,152.8,153.2,
-                   153.0,152.8,151.8,151.6,152.8,152.2])
+                   153.0,152.8,151.8,151.6,152.8,152.2,152.2])
 
 # Instantiates a LinearRegression model and fits it to the above arrays
 model = sklearn.linear_model.LinearRegression().fit(days_elapsed,weight)
